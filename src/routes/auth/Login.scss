@@ -1,0 +1,57 @@
+$cairo: 'Cairo', sans-serif;
+$sans: 'Open Sans', sans-serif;
+
+.login{
+    margin-top: 100px;
+    .container{
+        .login__wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                font-family: $sans;
+                color: #383737;
+            }
+            .login__fields{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                input{
+                    background: #f5f5f5;
+                    padding: 20px;
+                    width: 400px;
+                    border-radius: 17px;
+                    &::placeholder{
+                        padding: 15px;
+                        font-family: $cairo;
+                        font-weight: 600;
+                        color: rgb(61, 58, 58);
+                    }
+                    &:valid{
+                        font-family: $cairo;
+                        font-weight: 600;
+                        color: rgb(27, 7, 7);
+                    }
+                }
+                button{
+                    background: #54ca3c;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    font-family: $cairo;
+                    font-size: 17px;
+                    font-weight: 500;
+                    &:active{
+                        transform: scale(0.92);
+                        transition: 0.3s;
+                    }
+                }
+            }
+            .input__bg{
+                img{
+                    width: 700px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
