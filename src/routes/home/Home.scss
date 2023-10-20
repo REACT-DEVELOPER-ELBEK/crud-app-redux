@@ -1,0 +1,64 @@
+.home{
+    position: absolute;
+    left: 45vh;
+    top: 10vh;
+    .container{
+        .home__wrapper{
+            h1{
+                color: var(--Black, #202020);
+                font-family: Cairo;
+                font-size: 34px;
+                font-weight: 700;
+            }
+            .students__cards{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px 100px;
+                .card{
+                    background: #f5f5f5;
+                    padding: 25px;
+                    border-radius: 20px;
+                    h2{
+                        color: var(--Black, #202020);
+                        text-align: center;
+                        font-family: Cairo;
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                    }
+                    h4{
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        color: var(--Black, #202020);
+                        font-family: Open Sans;
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-top: 15px;
+                        text-transform: lowercase;
+                        span{
+                            border-radius: 12px;
+                            background: var(--Primary-Soft, #F6EEFF);
+                            color: #6418C3;
+                            padding: 6px 10px;
+                        }
+                    }
+                    .card__functions{
+                        margin-top: 15px;
+                        display: flex;
+                        gap: 20px;
+                        button{
+                            font-size: 25px;
+                            &:first-child{
+                                color: rgb(116, 6, 116);
+                            }
+                            &:last-child{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

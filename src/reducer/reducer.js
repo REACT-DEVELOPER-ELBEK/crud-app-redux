@@ -10,7 +10,9 @@ const loginReducer = (state = initialState, action) =>{
                 username: action.user,
                 password: action.password
             }
-        default: state
+        default: return{
+            username: "Guest",
+        }
     }
 }
 
